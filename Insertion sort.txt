@@ -1,0 +1,24 @@
+ALGORITHM Insertion_sort
+
+VAR
+i, j, size, aux : integer;
+Table : Array;
+
+Begin 
+insertionSort(VAR Table[], VAR size) 
+  for ( i= 0; i < size; step++) 
+     aux = Table[i];
+     j = i - 1;
+
+      while (aux < Table[j] && j >= 0) 
+       Table[j + 1] = Table[j];
+       j=j-1;
+      END_WHILE;
+    
+     Table[j + 1] = aux;
+
+   END_FOR;
+
+ END.
+  
+
